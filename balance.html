@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mt-5">
+        <h1 class="text-5xl text-[tomato] text-center mx-auto">Calculation <span class="font-bold text-[purple]">Balance</span></h1>
+    </header>
+    <main >
+        <div class="grid grid-cols-3 gap-4 mt-5 mx-5">
+            <div class="box bg-red-300 rounded-md text-center" id="deposite">
+                <h2 class="text-2xl text-red-900">Deposite</h2>
+                <p class="text-white">Amount:</p>
+                <p id="dePosite" class="inline" >00</p><p class="inline">$</p>
+            </div>
+            <div class="box bg-blue-300 rounded-md text-center" id="withdraw">
+                <h2 class="text-2xl text-blue-900">Withdraw</h2>
+                <p class="text-white">Amount:</p>
+                <p id="withDraw" class="inline" >00</p><p class="inline">$</p>
+            </div>
+            <div class="box bg-pink-300 rounded-md text-center" id="balance">
+                <h2 class="text-2xl text-pink-900">Balance</h2>
+                <p class="text-white">Amount:</p>
+                <p id="baLance" class="inline" >1240</p><p class="inline">$</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mt-5 mx-5">
+            <div class="box bg-green-700 rounded-md text-center p-5">
+                <input class="border-2 rounded p-2 mb-5 w-11/12 text-[darkgreen] text-center" type="text" name="" id="dAmount" placeholder="Enter amount"><br>
+                <button id="dBtn" class="hover:bg-blue-900 hover:text-blue-100 hover:transition-colors border-2 p-2 rounded-md bg-[lightgreen] text-[darkgreen]">Deposite</button>
+                </div>
+            <div class="box bg-green-700 rounded-md text-center p-5">
+                <input class="border-2 rounded p-2 mb-5 w-11/12 text-[darkgreen] text-center" type="text" name="" id="wAmount" placeholder="Enter amount"><br>
+                <button id="wBtn" class="hover:bg-red-900 hover:text-red-100 hover:transition-colors border-2 p-2 rounded-md bg-[lightgreen] text-[darkgreen]">Withdraw</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/balance.js"></script>
+</body>
+</html>
