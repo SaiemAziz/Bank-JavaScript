@@ -2,7 +2,7 @@ document.getElementById("wBtn").addEventListener("click", function () {
     let withDraw = parseFloat(document.getElementById("withDraw").innerText);
     let baLance = parseFloat(document.getElementById("baLance").innerText);
     // let dePosite = parseFloat(document.getElementById("dePosit").innerText);
-    if(document.getElementById("wAmount").value==""){
+    if(isNaN(parseFloat(document.getElementById("wAmount").value))){
         alert("Please enter amount");
     }
     else if(parseFloat(document.getElementById("wAmount").value) > baLance){
@@ -20,7 +20,7 @@ document.getElementById("dBtn").addEventListener("click", function () {
     // let withDraw = parseFloat(document.getElementById("withDraw").innerText);
     let baLance = parseFloat(document.getElementById("baLance").innerText);
     let dePosite = parseFloat(document.getElementById("dePosite").innerText);
-    if(document.getElementById("dAmount").value==""){
+    if(isNaN(parseFloat(document.getElementById("dAmount").value))){
         alert("Please enter amount");
     }
     else
